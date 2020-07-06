@@ -24,12 +24,12 @@ DROP TABLE IF EXISTS `prenoms`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `prenoms` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `prenom` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `description` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `image` varchar(255) COLLATE latin1_general_ci NOT NULL,
-  `status` varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+  `prenom` varchar(255) CHARACTER SET latin1  NOT NULL,
+  `description` text CHARACTER SET latin1 NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `status` varchar(255)  DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=52 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=52 DEFAULT CHARSET=latin1 ;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -58,7 +58,7 @@ CREATE TABLE `projects` (
   `promo` int NOT NULL,
   `unit` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -82,7 +82,7 @@ CREATE TABLE `promo` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nom` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -107,7 +107,7 @@ CREATE TABLE `units` (
   `name` varchar(255) NOT NULL,
   `description` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
