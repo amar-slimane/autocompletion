@@ -37,6 +37,10 @@ function set_search_event() {
 			success:function(data) {
 				$("body").append(data);
 				$('#userProfile').modal("show");
+
+				$('#userProfile').on('hidden.bs.modal', function (e) {
+					this.remove();
+				});
 			}
 
 		});
@@ -65,8 +69,16 @@ $("document").ready(function() {
 			autocomplete(value);
 		}
 	});
+	
+	$("#searchBtn").click(function(e) {
+		window.location = "index.php?a=sl&&v="+$("#search").val();
+	});
 
+	$("#searchBtn1").click(function(e) {
+		window.location = "index.php?a=sl&&v="+$("#search_main").val();
+	});
 	$("body").click(function() { $(".search_list").remove(); })
-
+	
+	set_search_event();
 });
 

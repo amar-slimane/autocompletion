@@ -1,5 +1,8 @@
 <?php
-require("../../models/bdd/bdd.php");
+if(!isset($_SESSION)) {
+	session_start();
+}
+require($_SESSION["ROOT"]."models/bdd/bdd.php");
 
 
 if(isset($_GET["action"])) {
@@ -14,11 +17,10 @@ if(isset($_GET["action"])) {
 			$res = $query->fetchAll(PDO::FETCH_ASSOC);
 			
 			foreach($res as $match) { 
-				require("../../views/search_list.php");
+				require($_SESSION["ROOT"]."views/search_list.php");
 			}
 		break;
 	}
-
 }
 
 ?>

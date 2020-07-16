@@ -14,6 +14,9 @@
 
 			<div class="modal-body row justify-content-center">
 				<img src='medias/avatars/<?=$user["image"]?>' class='rounded-circle' height='300'/>
+					<div class='col-12 d-flex justify-content-center'>
+						<div class='rounded-pill bg-primary p-1 m-1 text-white'><?=$user["promo"]?></div>
+					</div>
 				<p class='text-center col-12'><?=$user["description"]?></p>
 			</div>
 
