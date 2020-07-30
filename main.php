@@ -21,7 +21,7 @@
 			<img src='medias/collaborate.png' style='height:15em;'/>
 		</div>
 		<div class='col-4 m-0 p-0 row justify-content-center' style='height:fit-content;'>
-			<p class='h3 text-white text-center col-12' style='height:fit-content;'>Codez !</p>
+			<p class='h3 text-white text-center col-12' style='height:fit-content;'>Codez !!</p>
 			<img src='medias/program.png' style='height:15em;'/>
 		</div>
 
